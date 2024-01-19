@@ -13,12 +13,6 @@ class Handler implements URLHandler {
             return "Welcome!";
         } 
         else {
-            try{
-                String[] items = url.getQuery().split("=");
-            }
-            catch (NullPointerException n) {
-                System.out.println("ur bad");
-            }
             if (!items[0].equals("s")){
                 return "404 Not Found";
             }
