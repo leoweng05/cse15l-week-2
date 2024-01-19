@@ -16,7 +16,7 @@ class Handler implements URLHandler {
             try{
                 String[] items = url.getQuery().split("=");
             }
-            catch NullPointerException n {
+            catch (NullPointerException n) {
                 System.out.println("ur bad");
             }
             if (!items[0].equals("s")){
